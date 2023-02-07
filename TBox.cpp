@@ -5,9 +5,8 @@ int TBox::box_fit(TBox instance) {
 	if (instance.getLenght() > lenght || instance.getWidth() > width ||
 		instance.getHeight() > height)
 		return 0;
-	
-	return (int)(lenght / instance.lenght) * (int)(width / instance.width) *
-		(int)(height / instance.height);
+	return std::trunc(lenght / instance.lenght) * std::trunc(width / instance.width)
+		* std::trunc(height / instance.height);
 }
 void TBox::print() {
 	std::cout << "Length = " << lenght << std::endl;
