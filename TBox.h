@@ -31,13 +31,13 @@ public:
 	double getHeight() {
 		return height;
 	}
-	void setLenght(int l) {
+	void setLenght(double l) {
 		lenght = l;
 	}
-	void setWidth(int w) {
+	void setWidth(double w) {
 		width = w;
 	}
-	void setHeight(int h) {
+	void setHeight(double h) {
 		height = h;
 	}
 	double volume() {
